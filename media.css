@@ -1,0 +1,217 @@
+@media only screen and (max-width: 1200px) {
+  a#scroll-btn {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  /* Responsive Styles */
+  /* Adjust margins for smaller screens */
+  .mainDiv {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  /* Center the logo and hamburger icon in the mobile view */
+  #hamburger-nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo,
+  .hamburger-menu {
+    margin: 0;
+  }
+
+  /* Hide the desktop navigation */
+  #desktop-nav {
+    display: none;
+  }
+
+  /* Display the hamburger icon */
+  #hamburger-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .menu-links {
+    display: none;
+    position: absolute;
+    top: -2rem; /* Adjust the top position as needed */
+    right: 0rem;
+    background-color: black;
+    padding: 2rem;
+    z-index: -1;
+  }
+
+  .menu-links.show {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+  }
+
+  .menu-links ul {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  /* beginnig bio */
+  section#Bio{
+    height: 100%;
+  }
+  .beg{
+    padding-top: 6rem;
+    letter-spacing: -0.1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 110%;
+    color: white;
+  }
+  /* Make the section headings responsive */
+  .firstHead {
+    font-size: 2.5rem;
+  }
+
+  /* work section */
+
+  section#work{
+    margin-top: 15rem;
+    height: 100%;
+  }
+
+
+  .description-container h2 a {
+    white-space: normal;
+    display: block;
+    max-width: 100%;
+    line-height: 1.5rem;
+}
+ 
+  h2{
+    font-size: 1.39rem;
+    line-height: 2.5rem;
+  }
+
+  .section_pic-container_right{
+    margin-left: 0rem;
+}
+.section_pic-container_right, .section_pic-container_left{
+    width: 100%;
+}
+
+  /* Adjust padding for the about section */
+  section#about {
+    margin-top: 15rem;
+    height: 100%;
+  }
+
+  /* Make the about-me text responsive */
+  .aboutme {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    height: 100%;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+iframe{
+    height: 500px;
+}
+
+/* Adjust styles for the embedded file */
+.pic-about {
+    height:150vh;
+    width: 100%;
+    height:100%;
+    margin-top: rem; /* Adjust margin as needed */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+footer {
+    padding-top: 5rem;
+    height: 100%;
+    margin-top: 3rem; /* Add margin to move the footer down */
+    flex-direction: column;
+    justify-content: flex-end; 
+    display: flex;
+}
+
+.bot {
+    margin-top: 2rem;
+}
+
+/* Center the words in the footer */
+footer h2{
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    height:10vh;
+    margin-top: 6rem;
+}
+/* Make the work section container full-width */
+.section-container {
+    flex-direction: column;
+}
+
+
+/* Center the Lets chat text in the footer */
+footer h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+/* Display links in two columns */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    gap: 0.3rem;
+}
+
+.nav-links li {
+    margin-bottom: 0.5rem;
+}
+
+/* For BlueK */
+.summary {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally on smaller screens */
+}
+
+.paragraph {
+    width: 100%; /* Full width for paragraphs on smaller screens */
+}
+
+.summary h2{
+    padding-bottom: 1rem;
+}
+
+video{
+    height:400px;
+    width: 200px;
+}
+}

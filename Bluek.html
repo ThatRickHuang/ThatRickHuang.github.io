@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueK</title>
+    <link rel = "stylesheet" href = "styling.css">
+    <link rel = "stylesheet" href = "media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav id = desktop-nav>
+        <div class = "logo"><a href="./index.html">Huang</a></div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href ="./index.html#work">Work</a></li>
+                <li><a href ="./index.html#iphone">About</a></li>
+                <li><a href ="./NewResume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="#Bio">Huang</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links" id="menu-links">
+                <ul class="nav-links">
+                    <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+                    <li><a href="#iphone" onclick="toggleMenu()">About</a></li>
+                    <li><a href="./NewResume.pdf" onclick="toggleMenu()" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="mainDiv">
+        <section class="intro">
+            <div>
+                <h2 data-aos="fade-up" data-aos-duration="2000">01 BlueK</h2>
+            </div>
+            <div>
+                <img
+                      src="./assets/BlueK front.webp"
+                      alt="front view"
+                      class="work-pic"
+                      data-aos="fade-up"  data-aos-duration="2000"
+                    />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="summary">
+                <h2> Summary</h2>
+                <p class="paragraph">
+                    During my first year at the University of Waterloo, my team and I were assigned a culminating project, requiring us to build a robot that could perform a task of our choice, integrating both mechanical and software components. Our final project, named BlueK, focused on developing a robot with the ability to identify color pairs on a 3x4 board. 
+              </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="summary">
+                <h2>Mechanical Overview</h2>
+                <p class="paragraph">
+                    The robotic structure was assembled using LEGO elements, with the LEGO Mindstorm EV3 serving as the central processing unit. The 3x4 board, which contained the color pairs, was also constructed with LEGO components. Additionally, the framework that provided the robot's movement was made using aluminum extrusions. As the picture is shown above, the robot navigates the two-dimensional space to access each card arranged in a table format. 
+              </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="summary">
+                <h2>Software Overview</h2>
+                <p class="paragraph">
+                    The language we used to develop the color solving logic was ROBOTC, which is a text-based programming language based on the standard C programming language. There were constraints due to the accuracy of the robot’s sensors, motor encoder, and limited materials. To overcome these constraints, we had BlueK flip two cards in a row each time. If the two adjacent cards were the same color, it would leave it flipped over. However, if they were different, BlueK would just flip it over back to its uncolored side and store the position of the color in an array. After it flips all 12 cards, it would proceed to loop through the array and find the first color that has not been paired yet.               </p>
+            </div>
+            <section data-aos="fade-up" data-aos-duration="2000" class="pics">
+                <h2 class="additonal">
+                    Additional Pictures/Video
+                </h2>
+                <div class="gallery">
+                    <div class = "colLeft">
+                        <img src="./assets/unflippedBoard.webp" alt="unflipped board">
+                        <img src="./assets/flipped board.webp" alt="flipped board">
+                    </div>
+                    <div class = "colRight">
+                        <img src="./assets/robot.webp" alt ="robot on top">
+                        <img src= "./assets/toptrack.webp" alt="robot on top track">
+                    </div>
+                </div>
+                <div class="vid">
+                    <video width="600" height="800" controls>
+                        <source src="./assets/group 8-13.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            
+            
+            
+                
+        </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+        <script src = "script.js">
+    
+        </script>
+    </div>
+    <footer>
+        <nav class="bluekbot">
+            <h2>Let's chat!</h2>
+            <ul class="nav-links" >
+              <li><a href="https://www.linkedin.com/in/rick-huang-601820257/">Linkedin↗</a></li>
+              <li><a href="https://github.com/ThatRickHuang" target="_blank">GitHub↗</a></li>
+              <li><a href="mailto: r242huan@uwaterloo.ca">Email↗</a></li>
+              <li><a href="./NewResume.pdf" target="_blank">Resume↗</a></li>
+            </ul>
+        </nav>
+        <p>© Rick Huang 2023.</p>
+      </footer>
+</body>
+</html>

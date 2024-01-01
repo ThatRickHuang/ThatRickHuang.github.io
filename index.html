@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Huang</title>
+    <link rel = "stylesheet" href = "styling.css">
+    <link rel = "stylesheet" href = "media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id = desktop-nav class="navColor"> 
+        <div class = "logo"><a href="#Bio">Huang</a></div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href ="#work">Work</a></li>
+                <li><a href ="#iphone">About</a></li>
+                <li><a href ="./NewResume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="#Bio">Huang</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links" id="menu-links">
+                <ul class="nav-links">
+                    <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+                    <li><a href="#iphone" onclick="toggleMenu()">About</a></li>
+                    <li><a href="./NewResume.pdf" onclick="toggleMenu()" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="mainDiv">
+    <section id ="Bio">
+        <div class="bio">
+            <h1 class = "beg" data-aos="fade-up" data-aos-duration="1000">Rick Huang is a <span class="key">software engineer</span> based in <span class="key">Toronto</span>. Currently pursuing engineering at the <span class="key">University of Waterloo</span> </h1>
+        </div>
+        <a id="scroll-btn" href="#work"></a>
+    </section>
+    <section id="work">
+        <div>
+            <h1 class="firstHead"  data-aos="fade-right" data-aos-duration="1000">Work</h1> 
+        </div>
+        <div class="section-container">
+            <div class="description-container">
+                <h2 data-aos="fade-right" data-aos-duration="1000"><a href="./Bluek.html">01 BlueK - Autonomous robot memory game↗</h2></a> 
+            </div>
+            <div class="section_pic-container_left">
+              <img
+                src="./assets/BlueK front (1).webp"
+                alt="Front view of BlueK"
+                class="work-pic"
+                data-aos="fade-up"  data-aos-duration="2000"
+              />
+            </div>
+            <div class="section_pic-container_right">
+              <img
+                src="./assets/birds view fixed.png"
+                alt="Birds view of BlueK"
+                class="work-pic"
+                data-aos="fade-up"  data-aos-duration="2000"
+              />
+            </div>
+        </div>
+        <hr class = "line">
+        <div class="section-container">
+            <div class="description-container">
+                <h2 class="description" data-aos="fade-right" data-aos-duration="1000"><a href="https://github.com/ThatRickHuang/HotStockBot" target="_blank">02 HotStockBot - Finance Discord bot↗</h2></a> 
+            </div>
+            <div class="section_pic-container_left">
+              <img
+                src="./assets/IMG_6452.jpeg"
+                alt="stock image"
+                class="discord"
+                data-aos="fade-up"  data-aos-duration="2000"
+              />
+            </div>
+            <div class="section_pic-container_right">
+              <img
+                src="./assets/IMG_6738.jpeg"
+                alt="commands"
+                class="work-pic"
+                data-aos="fade-up"  data-aos-duration="2000"
+              />
+            </div> 
+        </div>  
+        <hr class = "line">
+        <div class="section-container">
+            <div class="description-container">
+                <h2 class="description" data-aos="fade-right" data-aos-duration="1000">03 Personal Website - Coded and designed by me</h2>
+            </div>
+            <div class="section_pic-container_left">
+              <img
+                src="./assets/cover phone mock.png"
+                alt="website on phone"
+                class="work-pic"
+                data-aos="fade-up"  data-aos-duration="2000"
+              />
+            </div>
+            <div class="section_pic-container_right">
+              <img
+                src="./assets/laptopmock.png"
+                alt="website on laptop"
+                class="work-pic"
+                data-aos="fade-up"  data-aos-duration="2000"
+              />
+            </div> 
+        </div>  
+    </section>
+
+    <section id="about">
+        <div>
+            <h1 class="firstHead"  data-aos="fade-right" data-aos-duration="1000">About</h1> 
+        </div>
+        <div class="about-container">
+            <div class="pic-about">
+                <iframe id="iphone" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDxrlLWMKbhEtr6Hdo9wous%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D37-967%26viewport%3D-5739%252C-266%252C0.75%26t%3DiYeHZmIDAx4PUgv4-1%26scaling%3Dscale-down%26mode%3Ddesign &hide-ui=1" allowfullscreen></iframe>
+            </div>
+            <div class ="aboutme">
+                <h2 data-aos="fade-up"  data-aos-duration="2000">Hey, my name is Rick! I am based in both Toronto and Brooklyn. <br> <br>Currently, I am at the University of Waterloo, pursuing my undergraduate degree in Mechatronics. <br> <br>I'm passionate about leveraging technology to create positive impact, and I thrive on bringing ideas to life from inception to launch.</h2>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+
+    </script>
+
+    <script src = "script.js">
+
+    </script>
+</div>
+<footer>
+    <nav class="bot">
+        <h2>Let's chat!</h2>
+        <ul class="nav-links" >
+          <li><a href="https://www.linkedin.com/in/rick-huang-601820257/">Linkedin↗</a></li>
+          <li><a href="https://github.com/ThatRickHuang" target="_blank">GitHub↗</a></li>
+          <li><a href="mailto: r242huan@uwaterloo.ca">Email↗</a></li>
+          <li><a href="./NewResume.pdf" target="_blank">Resume↗</a></li>
+        </ul>
+    </nav>
+    <p>© Rick Huang 2023.</p>
+  </footer>
+</body>
+</html>
