@@ -92,6 +92,13 @@
     margin-top: 15rem;
     height: 100%;
   }
+  
+  .description-container h2{
+    white-space: normal;
+    display: block;
+    max-width: 100%;
+    line-height: 1.5rem;
+  }
 
 
   .description-container h2 a {
@@ -108,6 +115,7 @@
 
   .section_pic-container_right{
     margin-left: 0rem;
+    margin-top: 2.5rem;
 }
 .section_pic-container_right, .section_pic-container_left{
     width: 100%;
@@ -120,11 +128,13 @@
   }
 
   /* Make the about-me text responsive */
-  .aboutme {
+  .aboutme h2{
     font-size: 1.2rem;
     margin-bottom: 5rem;
     height: 100%;
+    line-height: 2rem;
   }
+
   .about-container {
     display: flex;
     flex-direction: column;
@@ -132,7 +142,22 @@
 
 }
 iframe{
-    height: 500px;
+    height: 800px;
+}
+
+.skill-section{
+  padding-top: 5rem;
+}
+.skill-section h2{
+  margin-bottom: 0rem;
+}
+
+.list p{
+  font-size: 0.859rem;
+}
+
+.list{
+  padding-bottom: 2rem;
 }
 
 /* Adjust styles for the embedded file */

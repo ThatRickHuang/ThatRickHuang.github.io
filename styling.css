@@ -12,6 +12,7 @@ img {
   height: 100%;
 }
 
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -29,10 +30,16 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 
+h2{
+  font-size: 2.78rem;
+  font-weight: 100;
+  color: white;
+  line-height: 3rem;
+}
 /* Transition */
 
 a,
@@ -234,12 +241,11 @@ section#work {
   border-radius: 0.25rem;
 }
 
-h2{
+.aboutme h2{
     font-size: 2.78rem;
     font-weight: 100;
     color: white;
     line-height: 3rem;
-    
 }
 
 .description-container {
@@ -263,6 +269,11 @@ h2{
     height: 100%;
 }
 
+#about p{
+  line-height: 1rem;
+
+}
+
 .pic-about{
     height: 100%;
     width: 50%;
@@ -272,7 +283,7 @@ h2{
 
 .about-container{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -280,7 +291,26 @@ h2{
     width: 100%;
     max-width: 50rem; /* Set a maximum width to control text wrapping */
     margin-top:-1rem;
+    display: flex;
+    flex-direction: column;
+
 }
+
+.skill-section{
+  padding-top: 10rem;
+  height: 100%;
+}
+
+
+.list{
+  padding-top: 2rem;
+}
+
+#about span{
+  font-weight: 600;
+}
+
+
 
 /* footer */
 footer{
