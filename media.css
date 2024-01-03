@@ -81,6 +81,9 @@
     line-height: 110%;
     color: white;
   }
+  .outerbox{
+    display: none;
+  }
   /* Make the section headings responsive */
   .firstHead {
     font-size: 2.5rem;

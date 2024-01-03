@@ -166,7 +166,17 @@ a:hover {
     height: auto;
 }
 
+.box {
+  position:relative;
+  width: 3.125rem;
+  height: 6.25rem;
+}
 
+.outerbox{
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
 
 
 .beg {
@@ -199,7 +209,7 @@ section {
 
 section#work {
   height: 100%;
-  margin-top: 15rem;
+  margin-top: 3rem;
 }
 .section-container {
     display: flex;
@@ -339,6 +349,8 @@ footer .bot {
   }
 
 /* animated scroll button */
+
+
 
 a#scroll-btn {
     position: absolute;
