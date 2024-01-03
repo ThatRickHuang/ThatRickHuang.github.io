@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+    once: true,
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     var menuIcon = document.getElementById("menu-icon");
